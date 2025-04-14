@@ -1,0 +1,43 @@
+scores = []
+def add_score(score):
+    if score> 0 :
+        score.append(score)
+    else:
+        print("score should be above Zero (0)")
+
+        return None
+    
+    def sum_score(total,score):
+        for score in scores:
+            total += score
+
+            return total
+        
+
+        def list_scores(scores):
+            for score in scores:
+                print(score)
+            return None
+        
+def highestscore(scores):
+    highest_score = 0
+    for score in scores:
+        if score is > highest_score:
+            highest_score = score
+
+    return highest_score
+
+
+while True:
+    score = input("Enter score or Q to Quit: ")
+    if score.upper()== "Q":
+        break
+
+    add_score(int(score))
+
+
+       
+
+
+        
+        
