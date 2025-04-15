@@ -63,7 +63,7 @@ for meal in meals:
 
 def display_menu():
     mealnums = ['01','02','03','04','05']
-    print("\n\t\t*****MENU DETAILS*****\nMEAL NO.\t\tDISH\t\t\t\tPRICE\n")
+    print("\n******************** MENU DETAILS **********************************\nMEAL NO.\t\tDISH\t\t\t\tPRICE(shs.)\n")
     index = 0
     for meal in meals:
        output = f'{mealnums[index]}\t\t{meal_details[index]}\t\t'
@@ -77,7 +77,6 @@ def display_menu():
        print(output)    
 
 
-print(display_menu())   
 '''meal_details = []
 
     for i in range(4):
@@ -95,3 +94,17 @@ print(display_menu())
         "status":status
     }
     meals.append(mealdict)'''
+print(f"\nWELCOME TO JAVA RESTAURANT\n1.) DETAILS\n2.) MENU")
+while True:
+   option = input("SELECT OPTION (1 OR 2) AND 'Q' TO EXIT: ")
+   if option.upper() == "Q":
+       print(f"\n\tTHANK YOU FOR VISITING OUR APPLICATION! \n")
+       break
+   if option == "1":
+       print(display_restaurant_details())
+   if option =="2":
+       print(display_menu())
+
+
+        
+   
